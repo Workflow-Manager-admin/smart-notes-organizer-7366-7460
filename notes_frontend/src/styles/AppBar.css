@@ -1,0 +1,30 @@
+.appbar {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  height: 56px;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+}
+.appbar-title {
+  font-size: 21px;
+  font-weight: bold;
+  color: var(--primary, #1976d2);
+  flex: none;
+  margin-right: 24px;
+}
+.appbar-search input {
+  height: 30px;
+  border-radius: 7px;
+  border: 1px solid var(--border-color);
+  padding: 0 13px;
+  font-size: 14px;
+  min-width: 170px;
+  background: #fff;
+}
+.appbar-actions {
+  margin-left: auto;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
