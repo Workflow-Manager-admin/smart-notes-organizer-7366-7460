@@ -29,6 +29,52 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.app-main {
+  display: flex;
+  min-height: 100vh;
+  background: var(--bg-primary);
+}
+
+.app-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content-body {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+.notes-list-section {
+  flex: 0 0 290px;
+  overflow-y: auto;
+  border-right: 1px solid var(--border-color);
+}
+
+.note-detail-section {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.app-auth-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  background: var(--bg-primary);
+}
+
+.app-loading,
+.app-error,
+.app-saving {
+  color: var(--primary, #1976d2);
+  text-align: center;
+  margin-top: 45px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
